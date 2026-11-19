@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { profile, stack, projects, timeline } from './data.js'
 import Footer from './Footer.jsx'
+import photo from './Images/karthik.jpeg'
 
 function Intro() {
   const [done, setDone] = useState(false)
@@ -30,7 +31,7 @@ function Hero() {
           <p className="role">Frontend Developer<br />based in Bangalore.</p>
           <div className="now">Previously at<b>Cognizant Technology Solutions</b>Software Engineer, 2022 – 2026</div>
         </div>
-         <div className="photo"><img src="./src/Images/karthik.jpg.jpeg" alt="Karthik" /></div>
+         <div className="photo"><img src={photo} alt="Karthik" /></div>
         {/* <div className="photo" role="img" aria-label="Photo placeholder">KP</div> */}
         <div>
           <p className="lead">I build fast, accessible React and TypeScript interfaces for banking and finance products.</p>
